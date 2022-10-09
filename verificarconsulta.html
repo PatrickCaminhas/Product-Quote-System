@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <link href="styleindex.css" rel="stylesheet">
+    <title>SCP - Sistema de Cotação de Produtos.</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Caminhas">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="consultabox">
+            <h2>Consulta de Cotação do dia 
+                <a id="current_date"></a>
+                <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    month = date.getMonth() + 1;
+                    day = date.getDate();
+                    const time = new Date().toLocaleTimeString();
+                    document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year + " às " + time + " ";
+                </script>
+            </h2>
+            <br>
+
+            <table border="1" class="tabela">
+                <tr class="cabecalho">
+                    <td class="atencao">Produto</td>
+                    <td class="atencao">Menor preço</td>
+                    <td class="atencao">Fornecedor</td>
+                    <td>Empresa 1</td>
+                    <td>Empresa 2</td>
+                    <td>Empresa 3</td>
+                    <td>Empresa 4</td>
+                    <td>Empresa 5</td>
+ 
+                </tr>
+                <tr >
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td class="atencao">PREÇO A RETIRAR DO BD</td>
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+
+                </tr>
+                <tr >
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td class="atencao">PREÇO A RETIRAR DO BD</td>
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+
+                </tr>
+                <tr >
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td class="atencao">PREÇO A RETIRAR DO BD</td>
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+
+                </tr>
+                <tr >
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td class="atencao">PREÇO A RETIRAR DO BD</td>
+                    <td class="atencao">NOME A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+                    <td>PREÇO A RETIRAR DO BD</td>
+
+                </tr>
+            </table>
+            <br>
+            <div>
+                <a class="butonbox" href="index.html">Inicio</a> <a class="butonbox" href="verificardataconsulta.html">Verificar novamente</a>
+            </div>
+        </div>
+
+</body>
+
+</html>

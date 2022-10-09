@@ -1,0 +1,16 @@
+
+Como vai funcionar o banco de dados
+
+1 - Tabela: Cotação
+Nome do produto | Preço do fornecedor 1| ... | Preço do fornecedor N | Mês | Ano | Hora |
+
+
+2 - Tabela: Produtos
+Nome do produto | Preço do mês atual* | Preço do mês -1* | ... | Preço do mês -12* | 
+
+*equivalente ao menor preço da ultima consulta feita naquele mês.
+
+Como vai funcionar o programa
+
+1 - Cotação
+1.1 Colocado cada produto e preços o usuario pode ver a cotação sem gravar ou gravando.

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <link href="styleindex.css" rel="stylesheet">
+    <title>SCP - Sistema de Cotação de Produtos.</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Caminhas">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="consultabox">
+            <h2>Nova cotação
+            </h2>
+            <br>
+            <a>A cotação de preços realizada no dia
+                <a id="current_date"></a>
+                <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    month = date.getMonth() + 1;
+                    day = date.getDate();
+                    const time = new Date().toLocaleTimeString();
+                    document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year + " às " + time + " ";
+                    
+                </script>
+                foi gravada com sucesso!
+                <br> Clique no botão abaixo para voltar a pagina inicial.
+            </a>
+            <br>
+            
+
+            <div>
+                <a class="butonbox" href="index.html">Inicio</a>
+
+            </div>
+            
+        </div>
+
+</body>
+
+</html>

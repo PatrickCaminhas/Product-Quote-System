@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(12, 66, 167);
+    margin: 0px;
+}
+
+.container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.containertitle {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titlebox{
+    background-color: white;
+    width: 74%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:small;
+}
+.titlegreat{
+    font-size:35px;
+}
+.titlemin{
+    font-size: 25px;
+}
+.indexbox{
+    background-color: white;
+    width: 74%;
+    height: 74%; 
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.consultabox{
+    margin-top: -70px;
+    background-color: white;
+    width: 74%;
+    margin-top: 100px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 30px;
+}
+
+a.butonbox{
+    margin-top: auto;
+    line-height: 50px;
+    padding: 10px 20px;
+    background-color: rgb(12, 66, 167);
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    text-decoration:none;
+}
+a.butonbox:hover{
+    
+    background-color: rgb(3, 26, 68);
+    color: white;
+    box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a.butonbox:active {
+    background-color: #028fd1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(4px);
+  }
+table.tabela{
+    width: 80%;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+tr.cabecalho{
+    font-weight: bold;
+    font-size: 18px;
+}
+.explicacao{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: smaller;
+}
+td.atencao{
+    background-color: #028fd1;
+    color: white;
+    font-weight: bold;
+}

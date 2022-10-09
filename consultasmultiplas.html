@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link href="styleindex.css" rel="stylesheet">
+    <title>SCP - Sistema de Cotação de Produtos.</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Caminhas">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="consultabox">
+            <h2>Consultas multiplas
+            </h2>
+            <br>
+            <a>Foram constatadas mais de uma cotações de preços no dia
+                <a id="current_date"></a>
+                <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    month = date.getMonth() + 1;
+                    day = date.getDate();
+                    document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year + ".";
+                </script>
+                Clique no horário da cotação que queira consultar.
+            </a>
+            <br>
+            <br>
+            <a>Cotação realizada as </a><a href="verificarconsulta.html">10:32</a>
+            <br>
+            <a>Cotação realizada as </a><a href="verificarconsulta.html">11:05</a>
+            <br>
+            <a>Cotação realizada as </a><a href="verificarconsulta.html">13:45</a>
+            <br>
+            <a>Cotação realizada as </a><a href="verificarconsulta.html">16:05</a>
+            <div>
+                <a class="butonbox" href="verificardataconsulta.html">Voltar</a>
+            </div>
+
+        </div>
+
+</body>
+
+</html>

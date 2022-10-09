@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <link href="styleindex.css" rel="stylesheet">
+    <title>SCP - Sistema de Cotação de Produtos.</title>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Patrick Caminhas">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="consultabox">
+            <h2>Consulta dos preços anteriores do produto</h2>
+            <h1>#getProductName</h1>
+            <h2> a partir da data de hoje:
+                <a id="current_date"></a>
+                <script>
+                    date = new Date();
+                    year = date.getFullYear();
+                    month = date.getMonth() + 1;
+                    day = date.getDate();
+                    const time = new Date().toLocaleTimeString();
+                    document.getElementById("current_date").innerHTML = day + "/" + month + "/" + year;
+                    const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro", "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                        "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+                    ];
+
+                    const d = new Date();
+                </script>
+                <br>
+                Mês atual:
+                <script>
+                    document.write(monthNames[d.getMonth()])
+                </script>
+            </h2>
+            <br>
+
+            <table border="1" class="tabela">
+                <tr class="cabecalho">
+
+                    <td>Mês atual
+
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 11])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 10])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 9])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 8])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 7])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 6])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 5])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 4])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 3])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 2])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth() + 1])
+                        </script>
+                    </td>
+                    <td>
+                        <script>
+                            document.write(monthNames[d.getMonth()])
+                        </script>
+                    </td>
+                </tr>
+                <tr>
+                    <td>R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>                    
+                    <td>#R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>                    
+                    <td>#R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>                    
+                    <td>#R$ #getPrice</td>
+                    <td>#R$ #getPrice</td>                    
+                    <td>#R$ #getPrice</td>
+                </tr>
+
+            </table>
+            <br>
+            <div>
+                <a class="butonbox" href="index.html">Inicio</a> <a class="butonbox"
+                    href="verificarproduto.html">Verificar novamente</a>
+            </div>
+        </div>
+
+</body>
+
+</html>
